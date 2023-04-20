@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bb_brands",
+  "info": {
+    "singularName": "bb-brand",
+    "pluralName": "bb-brands",
+    "displayName": "BB - Brand",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bb_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bb-product.bb-product",
+      "mappedBy": "bb_brand"
+    }
+  }
+}

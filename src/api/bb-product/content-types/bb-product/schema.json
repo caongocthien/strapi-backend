@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bb_products",
+  "info": {
+    "singularName": "bb-product",
+    "pluralName": "bb-products",
+    "displayName": "BB - Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "discountPrice": {
+      "type": "biginteger"
+    },
+    "shortDescription": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "inventory": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "bb_brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bb-brand.bb-brand",
+      "inversedBy": "bb_products"
+    },
+    "bb_product_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::bb-product-category.bb-product-category",
+      "inversedBy": "bb_products"
+    }
+  }
+}

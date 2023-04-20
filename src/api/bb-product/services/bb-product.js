@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * info service
+ * bb-product service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::info.info');
+module.exports = createCoreService('api::bb-product.bb-product');
