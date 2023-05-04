@@ -52,6 +52,24 @@
       "relation": "manyToOne",
       "target": "api::bb-product-category.bb-product-category",
       "inversedBy": "bb_products"
+    },
+    "face_diameter": {
+      "type": "float"
+    },
+    "glass_material": {
+      "type": "string"
+    },
+    "wire_material": {
+      "type": "string"
+    },
+    "mechanism": {
+      "type": "string"
+    },
+    "water_resistance": {
+      "type": "string"
+    },
+    "trademark": {
+      "type": "string"
     }
   }
 }
