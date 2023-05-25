@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bb_carts",
+  "info": {
+    "singularName": "bb-cart",
+    "pluralName": "bb-carts",
+    "displayName": "BB - Cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Cart_Item": {
+      "displayName": "cart_items",
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.cart-items"
+    }
+  }
+}
