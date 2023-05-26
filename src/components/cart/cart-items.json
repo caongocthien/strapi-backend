@@ -6,9 +6,9 @@
   },
   "options": {},
   "attributes": {
-    "bb_products": {
+    "bb_product": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::bb-product.bb-product"
     },
     "quantity": {
