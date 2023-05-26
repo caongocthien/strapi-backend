@@ -17,7 +17,7 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "Cart_Item": {
+    "cart_item": {
       "displayName": "cart_items",
       "type": "component",
       "repeatable": true,
