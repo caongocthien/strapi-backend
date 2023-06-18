@@ -69,6 +69,9 @@
     "phone": {
       "type": "string",
       "required": true
+    },
+    "address": {
+      "type": "string"
     }
   }
 }
