@@ -36,13 +36,20 @@
         "bank"
       ]
     },
+    "subTotal": {
+      "type": "decimal"
+    },
     "total": {
       "type": "decimal"
     },
-    "products": {
+    "isPayment": {
+      "type": "boolean",
+      "default": false
+    },
+    "Products": {
       "type": "component",
       "repeatable": true,
-      "component": "cart.cart-items"
+      "component": "product.product-detail"
     }
   }
 }
