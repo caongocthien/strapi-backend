@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bb-order",
     "pluralName": "bb-orders",
-    "displayName": "BB - Order"
+    "displayName": "BB - Order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -34,6 +35,14 @@
         "cash",
         "bank"
       ]
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cart.cart-items"
     }
   }
 }
