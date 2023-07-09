@@ -1,7 +1,8 @@
 {
   "collectionName": "components_product_product_details",
   "info": {
-    "displayName": "Product Detail"
+    "displayName": "Product Detail",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,6 +17,11 @@
     },
     "sumPrice": {
       "type": "decimal"
+    },
+    "bb_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bb-product.bb-product"
     }
   }
 }
