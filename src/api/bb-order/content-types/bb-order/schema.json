@@ -46,7 +46,7 @@
       "type": "boolean",
       "default": false
     },
-    "Products": {
+    "products": {
       "type": "component",
       "repeatable": true,
       "component": "product.product-detail"
